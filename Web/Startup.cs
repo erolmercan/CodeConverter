@@ -51,10 +51,10 @@ namespace ICSharpCode.CodeConverter.Web
                     "{controller}/{action=Index}/{id?}");
             });
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Code Converter API V1");
-            });
+            //app.UseSwagger();
+            //app.UseSwaggerUI(c => {
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Code Converter API V1");
+            //});
 
             app.UseSpa(spa => {
                 spa.Options.SourcePath = "ClientApp";
